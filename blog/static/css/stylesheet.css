@@ -117,6 +117,7 @@ ul {
 	color: black;
 	border-left: 5px solid #3EB0F7;
 	padding-left: 10px;
+	padding-right: 30%;
 }
 
 #post-published {
@@ -145,3 +146,4 @@ ul {
 	float: right;
 	margin-right: 30%;
 }
+

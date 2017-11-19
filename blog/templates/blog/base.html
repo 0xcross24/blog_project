@@ -9,17 +9,23 @@
 	<meta name="author" content="">
 	<title>d.Moon-Production</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"><link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+	<link rel="stylesheet" href="{% static 'css/mobile-stylesheet.css' %}">
+
 </head>
 <body>
 	<div id="container">
-		<div class="sidebar">
+		<div class="sidebar navbar navbar-toggleable-md">
 			<div class="topleft">
 				<a href="{% url 'index' %}" id="logo">< / ></a>
 			</div>
+
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
 			<!-- End of Top Left -->
-			<div id="nav">
-				<ul>
+			<div id="nav" class="collapse navbar-collapse">
+				<ul class="navbar-nav">
 					<li class="blog"><a href="{% url 'index' %}">blog</a></li>
 					<li class="about"><a href="{% url 'about' %}">about</a></li>
 					<li class="contact"><a href="/">contact</a></li>
@@ -38,7 +44,7 @@
 				<div id="descriptioncontainer">
 					<div id="descriptionbackground">
 						{% block quote %}
-						<p class="description" style="font-size: 60px; color: #A9A9A9">A Bored Man is A Dangerous Man</p>
+						<p class="description" style="font-size: 30px; color: #A9A9A9; text-align: center;">A Bored Man is A Dangerous Man</p>
 						{% endblock %}
 					</div>
 				</div>
