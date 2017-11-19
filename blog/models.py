@@ -8,7 +8,7 @@ class Post(models.Model):
 	title = models.CharField(max_length=100) # Title
 	text = models.TextField();
 	created_date = models.DateTimeField(auto_now_add=True) # Date for time creation
-	picture = models.FileField(default=None)
+	picture = models.FileField(default=None, blank=True)
 
 	def __str__(self):
 		return self.title
