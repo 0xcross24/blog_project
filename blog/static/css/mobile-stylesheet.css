@@ -25,6 +25,11 @@
 		border-left: 2px solid #eff2f4;
 	}
 
+	.description {
+		font-size: 80px; 
+		color: #A9A9A9; 
+	}
+
 	.topleft {
 		border-bottom: 2px solid #eff2f4;
 		padding: 90px 60px;
@@ -165,6 +170,12 @@
 
 	.topheader {
 		display: block;
+	}
+
+	.description {
+		font-size: 30px; 
+		color: #A9A9A9; 
+		text-align: center;"
 	}
 
 	.topleft {
